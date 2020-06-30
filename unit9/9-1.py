@@ -28,6 +28,7 @@ XtX_1_Xt = tf.matmul(XtX_1, Xt)
 W = tf.matmul(XtX_1_Xt, Y)
 W = W.numpy()
 
+
 x1_test, x2_test = rd()
 y_pred = W[1] * x1_test + W[2] * x2_test + W[0]
 print(f"预测价格: {y_pred[0]} 万元")
